@@ -31,7 +31,6 @@ def sort_slianiem(data):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("ispolzovanie: python3 sort_ne_tot.py <fayl> <pamyat>")
         sys.exit(1)
 
     file_name = sys.argv[1]
@@ -134,6 +133,3 @@ if __name__ == "__main__":
     if os.path.exists(vyhodnoy):
         os.remove(vyhodnoy)
     os.replace(fayly[0], vyhodnoy)
-
-    print("gotovo!!!")
-    print("rezultat v fayle:", vyhodnoy)
